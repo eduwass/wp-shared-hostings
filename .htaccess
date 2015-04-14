@@ -1,15 +1,17 @@
+# Set Environment:
+SetEnv WP_ENV development
+
+# Admin redirect
+Redirect /admin /wordpress/wp-admin
+
+# BEGIN WordPress
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
-
-    # BEGIN WordPress
-    RewriteRule ^$ wordpress/index.php [L]
-
-    # Skip real files and directories
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-
-    # Otherwise send it to WordPress
-    RewriteRule .* wordpress/index.php [L]
-    # END WordPress
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
 </IfModule>
+
+# END WordPress
