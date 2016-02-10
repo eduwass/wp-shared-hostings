@@ -16,6 +16,8 @@ The advantages this setup provides are:
 * Separate config files for each environment
 * Easy git sync through FTP (no need for SSH access)
 * Easy DB and Media sync between environments
+* Update or change WordPress versions easily
+* You can also bulk update plugins (if you import them as git submodules) 
 
 ## Initial Setup
 
