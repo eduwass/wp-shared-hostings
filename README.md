@@ -9,7 +9,7 @@ Just clone this repo and run it using your desired LAMP/LEMP stack.
 
 Remember to use `--recursive` to make sure you pull all submodules
 ```
-git clone --recursive git://github.com/foo/bar.git
+git clone --recursive https://github.com/eduwass/Ultimate-WordPress-Boilerplate-for-shared-hostings.git
 ```
 
 ### Configure: [WordPress Multi-Environment Config](https://github.com/studio24/wordpress-multi-env-config)
@@ -60,7 +60,7 @@ You also have a **global settings** (shared by all environments) file:
 Since a lot of shared hostings only provide FTP access, we use git-ftp to push git changes through 
 the FTP protocol.
 
-#### Install on MacOSX
+#### Install on MacOSX (see git-ftp docs for other OSs)
 ```
 brew install git
 brew install curl --with-ssl --with-libssh2
@@ -84,11 +84,11 @@ git ftp push
 ```
 
 ### [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db)
-For easy DB syncs between environments we are using the [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db) plugin.
+For easy DB syncs between environments I recommend using the great [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db) plugin.
 <p align="center"><a><img src="https://raw.github.com/slang800/psychic-ninja/master/wp-migrate-db.png"/></a></p>
 
 #### Updating WordPress version
-Update to latest WordPress version:
+Update to latest WordPress version should be as easy as updating the corresponding submodule:
 
 1. `cd wordpress/`
 2. `git submodule update`
