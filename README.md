@@ -9,6 +9,7 @@ Using some great WP tools:
 * [wordpress-boilerplate](https://github.com/Darep/wordpress-boilerplate)
 * [git-ftp](https://github.com/git-ftp/git-ftp)
 * [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db)
+* [wp-sync-db-media-files](https://github.com/wp-sync-db/wp-sync-db-media-files)
 
 ## Initial Setup
 
@@ -45,6 +46,16 @@ You also have a **global settings** (shared by all environments) file:
 ``` 
 - wp-config.default.php
 ```
+
+#### Activate plugins
+Acces your WordPress dashboard, e.g: `yourdomain.dev/admin`
+
+Go to: **Dashboard > Plugins**
+
+And activate the plugins:
+
+* [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db)
+* [wp-sync-db-media-files](https://github.com/wp-sync-db/wp-sync-db-media-files)
 
 #### Update/Change WordPress version
 Update to latest WordPress version should be as easy as updating the corresponding submodule:
@@ -99,8 +110,11 @@ After you've commited and pushed your changes to the repo, use this command to g
 git ftp push
 ```
 
-### [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db)
+### DB and Uploads Sync: [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db)
 For easy DB syncs between environments I recommend using the great [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db) plugin.
 ![wp-sync-db](https://raw.github.com/slang800/psychic-ninja/master/wp-migrate-db.png)
 
+To sync the `/uploads` folder, make sure you've enabled the [wp-sync-db-media-files](https://github.com/wp-sync-db/wp-sync-db-media-files)
+plugin and use the checkbox **Media files**
 
+![wp-sync-db](https://raw.github.com/slang800/psychic-ninja/master/wp-sync-db-media-files.png)

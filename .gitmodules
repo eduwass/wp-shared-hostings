@@ -4,3 +4,6 @@
 [submodule "content/plugins/wp-sync-db"]
 	path = content/plugins/wp-sync-db
 	url = https://github.com/wp-sync-db/wp-sync-db.git
+[submodule "content/plugins/wp-sync-db-media-files"]
+	path = content/plugins/wp-sync-db-media-files
+	url = https://github.com/wp-sync-db/wp-sync-db-media-files
