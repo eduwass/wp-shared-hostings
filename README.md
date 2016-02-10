@@ -87,9 +87,9 @@ git ftp push
 For easy DB syncs between environments I recommend using the great [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db) plugin.
 <p align="center"><a><img src="https://raw.github.com/slang800/psychic-ninja/master/wp-migrate-db.png"/></a></p>
 
-#### Updating WordPress version
+#### Update/Change WordPress version
 Update to latest WordPress version should be as easy as updating the corresponding submodule:
 
 1. `cd wordpress/`
-2. `git submodule update`
+2. `git checkout tags/4.4.2`
 
