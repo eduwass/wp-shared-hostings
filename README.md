@@ -19,7 +19,7 @@ Just clone this repo and run it using your desired LAMP/LEMP stack.
 
 Remember to use `--recursive` to make sure you pull all submodules
 ```
-git clone --recursive https://github.com/eduwass/Ultimate-WordPress-Boilerplate-for-shared-hostings.git
+git clone --recursive https://github.com/eduwass/wp-shared-hostings.git
 ```
 
 ### Configure: [WordPress Multi-Environment Config](https://github.com/studio24/wordpress-multi-env-config)
