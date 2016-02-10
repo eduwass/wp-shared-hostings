@@ -1,5 +1,15 @@
 # Ultimate WordPress Boilerplate for shared hostings
 
+Just put together a WordPress starting Boilerplate to make WP development in shared hostings (FTP only)
+less painful.
+
+Using some great WP tools:
+
+* [wordpress-multi-env-config](https://github.com/studio24/wordpress-multi-env-config)
+* [wordpress-boilerplate](https://github.com/Darep/wordpress-boilerplate)
+* [git-ftp](https://github.com/git-ftp/git-ftp)
+* [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db)
+
 ## Initial Setup
 
 ### Install
@@ -36,13 +46,19 @@ You also have a **global settings** (shared by all environments) file:
 - wp-config.default.php
 ```
 
+#### Update/Change WordPress version
+Update to latest WordPress version should be as easy as updating the corresponding submodule:
+
+1. `cd wordpress/`
+2. `git checkout tags/4.4.2`
+
 ## Work
 ### Folder structure
 ```
 .
 ├── README.md
 ├── content                     <--- ALL your work should be in this folder
-├── uploads                     <--- Uploads folder, contains media files
+├── uploads                     <--- Uploads folder, contains media files (not tracked by git)
 ├── wordpress                   <--- WordPress submodule, don't touch this
 ├── wp-config.default.php       <--- Configuration files
 ├── wp-config.development.php
@@ -85,11 +101,6 @@ git ftp push
 
 ### [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db)
 For easy DB syncs between environments I recommend using the great [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db) plugin.
-<p align="center"><a><img src="https://raw.github.com/slang800/psychic-ninja/master/wp-migrate-db.png"/></a></p>
+![wp-sync-db](https://raw.github.com/slang800/psychic-ninja/master/wp-migrate-db.png)
 
-#### Update/Change WordPress version
-Update to latest WordPress version should be as easy as updating the corresponding submodule:
-
-1. `cd wordpress/`
-2. `git checkout tags/4.4.2`
 
