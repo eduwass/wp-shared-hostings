@@ -11,6 +11,12 @@ Using some great WP tools:
 * [wp-sync-db](https://github.com/wp-sync-db/wp-sync-db)
 * [wp-sync-db-media-files](https://github.com/wp-sync-db/wp-sync-db-media-files)
 
+The advantages this setup provides are:
+
+* Separate config files for each environment
+* Easy git sync through FTP (no need for SSH access)
+* Easy DB and Media sync between environments
+
 ## Initial Setup
 
 ### Install
